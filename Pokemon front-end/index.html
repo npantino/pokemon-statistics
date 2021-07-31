@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>API stuff</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+<h1>Pokemon Locations</h1>
+<div class="container">
+    <label for="searchBox"></label><input id="searchBox" type="text" placeholder="Pokemon Name"/>
+    <button id="searchButton" class="button1" onclick="getStuff()">Search</button>
+</div>
+
+<div id="gameInfo">
+    <div class="stats">
+        <p id="id"></p>
+        <div class="baseStats">
+            <h3>Base stats</h3>
+            <table>
+                <tr>
+                    <td id="stat_text_1">HP: </td>
+                    <td id="stat_1"></td>
+                </tr>
+                <tr>
+                    <td id="stat_text_2">Attack: </td>
+                    <td id="stat_2"></td>
+                </tr>
+                <tr>
+                    <td id="stat_text_3">Defense: </td>
+                    <td id="stat_3"></td>
+                </tr>
+                <tr>
+                    <td id="stat_text_4">Sp. Atk: </td>
+                    <td id="stat_4"></td>
+                </tr>
+                <tr>
+                    <td id="stat_text_5">Sp. Def: </td>
+                    <td id="stat_5"></td>
+                </tr>
+                <tr>
+                    <td id="stat_text_6">Speed: </td>
+                    <td id="stat_6"></td>
+                </tr>
+                <tr>
+                    <td id="stat_total_text">Total: </td>
+                    <td id="stat_total"></td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+    <p id="locations"></p>
+</div>
+
+<script src="script.js"></script>
+<script>document.getElementById("gameInfo").style.display = "none";</script>
+</body>
+</html>
